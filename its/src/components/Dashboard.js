@@ -6,13 +6,13 @@ import { Row , Container as ContainerBoot, Col, Jumbotron } from 'react-bootstra
 class Dashboard extends Component {
     render () {
         return (
-            <div>
+            <div className="h-100 mt-5">
                 <ContainerBoot>
                     <Row className="show-grid">
                         <Col md={3}>
                             <Jumbotron style={{padding: 10}} className="text-center">
                                 {/*Displaying logged in user's image*/}
-                                <img src={this.props.user.photoURL} alt="profile" className="img-responsive img-circle" style={{padding:20}} />
+                                <img src={this.props.user.photoURL} alt="profile" className="img-fluid rounded-circle" style={{padding:20}} />
                                 <h4 className="text-uppercase">Hello</h4>
                                 <h3>{this.props.user.displayName}</h3>
                             </Jumbotron>

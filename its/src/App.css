@@ -45,3 +45,6 @@
   margin-bottom: 20px;
   min-height: 350px;
 }
+html {
+  height:100%
+}
